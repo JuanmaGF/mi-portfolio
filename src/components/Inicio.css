@@ -1,0 +1,21 @@
+/* src/components/Inicio.css */
+
+.inicio-section {
+    background-image: url('https://www.example.com/programming-background.jpg'); /* Reemplaza con una imagen relacionada con programación */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inicio-section h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  .inicio-section p {
+    font-family: 'Arial', sans-serif;
+  }
+  

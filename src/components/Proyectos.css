@@ -1,0 +1,30 @@
+/* Proyectos.css */
+
+.proyectos {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.proyectos h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.proyectos p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.proyectos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.proyectos ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}

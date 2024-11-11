@@ -1,0 +1,18 @@
+/* SobreMi.css */
+
+.sobre-mi {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre-mi h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.sobre-mi p {
+  font-size: 1.1rem;
+  color: #555;
+}
