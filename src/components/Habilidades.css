@@ -1,24 +1,67 @@
-/* Habilidades.css */
-
 .habilidades {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
 }
 
 .habilidades h2 {
   font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.habilidades-seccion {
+  margin-top: 30px;
+}
+
+.habilidades-seccion h3 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.habilidades-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.habilidad-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100px;
+  text-align: center;
+}
+
+.habilidad-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.habilidad-icon {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
   color: #333;
-  margin-bottom: 1rem;
+  transition: color 0.3s ease;
 }
 
-.habilidades ul {
-  list-style-type: none;
-  padding: 0;
-}
+.habilidad-item:hover .habilidad-icon.react { color: #61dafb; }
+.habilidad-item:hover .habilidad-icon.js { color: #f7df1e; }
+.habilidad-item:hover .habilidad-icon.html { color: #e34f26; }
+.habilidad-item:hover .habilidad-icon.css { color: #1572b6; }
+.habilidad-item:hover .habilidad-icon.bootstrap { color: #7952b3; }
+.habilidad-item:hover .habilidad-icon.python { color: #306998; }
+.habilidad-item:hover .habilidad-icon.flask { color: #000; }
+.habilidad-item:hover .habilidad-icon.git { color: #f05032; }
+.habilidad-item:hover .habilidad-icon.github { color: #333; }
 
-.habilidades ul li {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+.habilidad-item span {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 5px;
 }

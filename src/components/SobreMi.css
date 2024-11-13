@@ -1,18 +1,140 @@
-/* SobreMi.css */
+/* Sección sobre mí */
+.sobre-mi-section {
+  background: linear-gradient(135deg, #ff6f61 0%, #d32f2f 100%);
+  padding: 80px 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
 
-.sobre-mi {
-  padding: 2rem;
-  max-width: 800px;
+.sobre-mi-container {
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.sobre-mi h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
+.sobre-mi-header {
+  margin-bottom: 40px;
 }
 
-.sobre-mi p {
+.sobre-mi-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sobre-mi-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  opacity: 0; /* Inicia invisible */
+  animation: fadeIn 1.5s forwards; /* Aplicar animación */
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  color: #f8b400;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f8b400;
+}
+
+.sobre-mi-cta {
+  margin-top: 30px;
+}
+
+.btn-download {
   font-size: 1.1rem;
-  color: #555;
+  padding: 12px 30px;
+  border-radius: 50px;
+  background-color: #f8b400;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #f05032;
+  transform: scale(1.05);
+}
+
+/* Animaciones de entrada */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-delay-1 {
+  animation-delay: 1s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 2s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 3s;
+}
+
+.fade-in-delay-4 {
+  animation-delay: 4s;
+}
+
+.fade-in-delay-5 {
+  animation-delay: 5s;
+}
+
+.fade-in-delay-6 {
+  animation-delay: 6s;
+}
+
+.fade-in-delay-7 {
+  animation-delay: 7s;
+}
+
+.fade-in-delay-8 {
+  animation-delay: 8s;
+}
+
+/* Efecto en pantallas pequeñas */
+@media (max-width: 768px) {
+  .sobre-mi-header h1 {
+    font-size: 2rem;
+  }
+
+  .sobre-mi-text {
+    font-size: 1rem;
+  }
+
+  .btn-download {
+    padding: 10px 25px;
+  }
 }
