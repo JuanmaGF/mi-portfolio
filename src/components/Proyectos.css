@@ -82,18 +82,24 @@
 .tecnologias {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px; /* Espacio debajo de las tecnologías */
+  align-items: center; /* Centra los iconos verticalmente */
+  gap: 20px; /* Aumenta el espacio entre los iconos */
+  margin-bottom: 15px;
+}
+
+.icons svg {
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Agrega una transición suave al hover */
+}
+
+.icons svg:hover {
+  transform: scale(1.1); /* Escala los iconos ligeramente cuando se pasa el ratón por encima */
 }
 
 .proyecto-enlace {
   display: flex;
   justify-content: center; /* Centrar el botón */
   width: 100%;
-}
-
-.icons svg {
-  cursor: pointer;
 }
 
 .proyecto-boton {
@@ -120,6 +126,11 @@
 }
 
 @media (max-width: 768px) {
+  .tecnologias {
+    flex-wrap: wrap; /* Permite que los iconos se ajusten a múltiples líneas en pantallas pequeñas */
+    gap: 15px; /* Reduce el espacio entre los iconos en pantallas pequeñas */
+  }
+
   .tecnologias-y-boton {
     flex-direction: column;
     align-items: center; /* Centrar elementos en pantallas pequeñas */

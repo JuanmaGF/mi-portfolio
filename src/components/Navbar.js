@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h2>MiPortafolio</h2>
+        <h2>Portfolio</h2>
       </div>
       <div className="navbar-links">
         <Link to="/" className="nav-item">

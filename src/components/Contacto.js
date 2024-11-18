@@ -6,7 +6,7 @@ const Contacto = () => {
   return (
     <div className="contacto-container">
       <h2>Contacto</h2>
-      <p>Si deseas comunicarte, puedes hacerlo a través de los siguientes medios:</p>
+      <p>Si deseas comunicarte conmigo, puedes hacerlo a través de los siguientes medios:</p>
       <div className="contacto-info">
         <div className="contacto-item">
           <FaEnvelope className="contacto-icon" />
