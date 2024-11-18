@@ -1,10 +1,11 @@
 /* Sección sobre mí */
 .sobre-mi-section {
-  background: linear-gradient(135deg, #ff6f61 0%, #d32f2f 100%);
-  padding: 80px 20px;
+  background: linear-gradient(135deg, #ff6f61 0%, #d32f2f 100%); /* Fondo moderno */
+  padding: 100px 20px;
   color: white;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 .sobre-mi-container {
@@ -17,18 +18,21 @@
 }
 
 .sobre-mi-header h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Sombra de texto */
 }
 
 .sobre-mi-text {
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 25px;
-  opacity: 0; /* Inicia invisible */
-  animation: fadeIn 1.5s forwards; /* Aplicar animación */
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  color: #f8f8f8; /* Color suave para los textos */
 }
 
 .skills-title {
@@ -40,9 +44,14 @@
 
 .skills-icons {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 25px;
   margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-icons:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
 }
 
 .skill-item {
@@ -54,27 +63,29 @@
 }
 
 .skill-item:hover {
-  transform: translateY(-10px);
-  color: #f8b400;
+  transform: translateY(-12px);
+  color: #f8b400; /* Color de hover */
 }
 
 .skill-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #f8b400;
+  color: #fff;
+  transition: color 0.3s ease;
 }
 
 .sobre-mi-cta {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .btn-download {
   font-size: 1.1rem;
-  padding: 12px 30px;
+  padding: 14px 35px;
   border-radius: 50px;
   background-color: #f8b400;
   color: #fff;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 .btn-download:hover {
@@ -82,7 +93,28 @@
   transform: scale(1.05);
 }
 
-/* Animaciones de entrada */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.github-link, .linkedin-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.github-link:hover, .linkedin-link:hover {
+  color: #f8b400;
+}
+
+.contacto-icon {
+  margin-right: 5px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -127,7 +159,7 @@
 /* Efecto en pantallas pequeñas */
 @media (max-width: 768px) {
   .sobre-mi-header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .sobre-mi-text {
@@ -135,6 +167,21 @@
   }
 
   .btn-download {
-    padding: 10px 25px;
+    padding: 12px 25px;
+  }
+
+  .skills-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-mi-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

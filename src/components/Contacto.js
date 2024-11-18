@@ -1,6 +1,5 @@
-// Contacto.js
 import React from 'react';
-import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Contacto.css';
 
 const Contacto = () => {
@@ -17,6 +16,8 @@ const Contacto = () => {
           <FaLinkedin className="contacto-icon" />
           <a href="https://www.linkedin.com/in/juanmagf/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
+        {/* Apartado GitHub */}
+        
       </div>
     </div>
   );

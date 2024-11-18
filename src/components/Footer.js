@@ -3,9 +3,12 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className="footer">
-      <p>© 2024 Mi Portafolio</p>
-    </div>
+    <footer className="footer">
+      <p>&copy; 2024 MiPortafolio. Todos los derechos reservados.</p>
+      <p className="footer-link">
+        <a href="/privacy-policy" className="footer-link-text">Política de privacidad</a> | <a href="/terms" className="footer-link-text">Términos y condiciones</a>
+      </p>
+    </footer>
   );
 }
 

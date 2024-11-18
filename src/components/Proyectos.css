@@ -27,6 +27,9 @@
 }
 
 .proyecto-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -68,40 +71,61 @@
   margin-bottom: 20px;
 }
 
-.tecnologias {
+.tecnologias-y-boton {
+  display: flex;
+  flex-direction: column; /* Alineación vertical */
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 20px;
 }
 
-.tecnologias h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.icons {
+.tecnologias {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 10px;
+  margin-bottom: 15px; /* Espacio debajo de las tecnologías */
+}
+
+.proyecto-enlace {
+  display: flex;
+  justify-content: center; /* Centrar el botón */
+  width: 100%;
 }
 
 .icons svg {
   cursor: pointer;
 }
 
-.video-demo {
-  margin-top: 15px;
-  color: #555;
-  font-style: italic;
+.proyecto-boton {
+  display: inline-block;
+  background-color: #f05032;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.video-demo strong {
-  color: #f05032;
+.proyecto-boton:hover {
+  background-color: #d7432a;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-boton:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {
-  .proyectos-container {
+  .tecnologias-y-boton {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centrar elementos en pantallas pequeñas */
+  }
+
+  .proyecto-boton {
+    margin-top: 10px;
   }
 }
