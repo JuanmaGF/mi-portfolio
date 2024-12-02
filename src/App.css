@@ -1,9 +1,29 @@
-/* src/App.css */
+/* Estilización Global */
+body, html {
+  height: 100%; /* Asegura que body y html ocupen toda la altura */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
 
-/* Asegúrate de que el contenido no quede oculto detrás del Navbar fijo */
-body {
-    padding-top: 70px;
-  }
-  
-  /* Añade estilos globales si es necesario */
-  
+/* Contenedor Principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que ocupe toda la ventana */
+}
+
+/* Contenido Principal */
+.App > .content {
+  flex: 1; /* Empuja el footer hacia abajo si no hay suficiente contenido */
+}
+
+/* Estilización del Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}

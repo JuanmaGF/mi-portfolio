@@ -1,5 +1,3 @@
-/* Footer.css */
-
 .footer {
   background-color: #333;
   color: #fff;
@@ -9,7 +7,8 @@
   bottom: 0;
   width: 100%;
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  /* Eliminamos la animación hover */
+  transition: none;
 }
 
 .footer p {
@@ -34,7 +33,7 @@
 }
 
 .footer:hover {
-  transform: translateY(5px);
+  transform: none; /* Eliminar el movimiento al pasar el mouse */
 }
 
 @media (max-width: 768px) {
